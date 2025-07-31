@@ -43,11 +43,13 @@ header {
 
 /* ========== Header Container ========== */
 .header-container {
-  height: 100%;
+  /*Display stuff*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  /*Box model stuff*/
+  height: 100%;
 }
 
 /* ========== Menu ========== */
@@ -56,26 +58,33 @@ header {
 }
 
 .menu-list {
+  /*Display stuff*/
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  /*Miscellaneous*/
   gap: 0 20px;
 }
 
 .menu-link {
+  /*Typography stuff*/
   font-weight: 500;
+  /*Miscellaneous*/
   letter-spacing: 0.5px;
 }
 
 /* ========== Header Intro ========== */
 .header-intro {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 850px;
+  /*Display stuff*/
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
+  /*Box model stuff*/
+  max-width: 850px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  /*Miscellaneous*/
   gap: 10px 0;
 }
 
@@ -85,4 +94,43 @@ header {
 
 .header-btn {
   padding: 10px 30px;
+}
+
+/* ========== Section Card ========== */
+.card {
+  height: 100vh;
+}
+
+.card__list {
+  /*Display stuff*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  /*Box model stuff*/
+  padding: 20px 0;
+  /*Typography stuff*/
+  color: #000;
+  /*Miscellaneous*/
+  gap: 40px;
+}
+
+.card__item {
+  /*Display stuff*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*Box model stuff*/
+  width: calc((1200px - 80px) / 3);
+  min-height: 160px;
+  padding: 20px;
+  background-color: #c4c4c480;
+  /*Miscellaneous*/
+  overflow: hidden;
+  gap: 20px 0px;
+}
+
+.card__link {
+  font-weight: 600;
 }
